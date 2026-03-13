@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+/* 상단 */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    padding-right: 10px;
+    background-color: antiquewhite;
+}
+/* 로고 */
+.logo{
+    width:200px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+}
+nav{
+    width: 600px;
+    background-color: antiquewhite;
+}
+#topmenu{
+    display: flex;
+    height: 50px;
+    background-color: aquamarine;
+}
+#topmenu > li {
+    width: calc(100% / 4);
+}
+#topmenu > li > a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 50px; 
+}
+#topmenu > li > a:hover {
+    background-color: red;
+    color: white;
+}
+/* 메인 */
+main{
+    padding: 50px 0;
+}
+h2{
+    margin-bottom: 20px;
+}
+section{
+margin-bottom: 20px;
+}
+/* 전체 설명 */
+.description{
+    /* width: 800px; */
+    display: flex;
+    gap: 20px;
+    /* background-color: aquamarine; */
+}
+.des-detail{
+    width: 500px;
+}
+.desc-img{
+    width: 450px;
+    background-color: red;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.desc-img img{
+    display: block;
+    width: 100%;
+    transition: all 0.2s;
+}
+.detail-top ,.detail-top h3,.detail-top h4{
+    margin-bottom: 10px;
+}
+.desc-img:hover img{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+footer{
+    background-color: #d4d4d4;
+    padding: 30px 20px;
+}
+footer ul{
+    display: flex;
+    background-color: #fff;
+}
+footer ul li{
+
+}
+.line{
+    width: 1px;
+    height: 12px;
+    background-color: red;
+    display: inline-block;
+    margin: 0 14px;
+}
